@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Generated analysis artifacts
+# Keep the written report and article drafts in git, but ignore regenerated
+# extraction output and machine-readable helper files.
+analysis/text/
+analysis/inventory.json
+analysis/meeting_digests.json
