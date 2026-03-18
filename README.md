@@ -11,6 +11,14 @@ This repository collects Associated Students UCSB Senate source documents and th
 
 ## Repo layout
 
+### Public site
+
+- [`index.html`](/Users/wonda/Documents/GitHub/Associated%20Students%20Data/index.html)
+- Repo-root static site entrypoint for public publishing.
+
+- [`assets/`](/Users/wonda/Documents/GitHub/Associated%20Students%20Data/assets)
+- Styles, data, and client-side rendering for the public site.
+
 ### Source documents
 
 - [`AS/`](/Users/wonda/Documents/GitHub/Associated%20Students%20Data/AS)
@@ -46,6 +54,7 @@ These files are useful for local review but are not the primary public deliverab
 
 ### Intended to publish
 
+- the static site in `index.html` and `assets/`
 - source PDFs in `AS/`, if you want the repo to function as a primary-source archive
 - the written report
 - the article drafts
@@ -57,6 +66,19 @@ These files are useful for local review but are not the primary public deliverab
 - generated inventories and digests
 - OS clutter such as `.DS_Store`
 
+## Publishing
+
+This repo is set up for a no-build static deploy.
+
+### GitHub Pages
+
+1. Push the repo to GitHub.
+2. In the repo settings, open `Pages`.
+3. Set the source to the default branch and the `/ (root)` folder.
+4. GitHub Pages will serve [`index.html`](/Users/wonda/Documents/GitHub/Associated%20Students%20Data/index.html) as the public site entrypoint.
+
+Because the site lives at the repo root, the meeting cards can link directly to the PDFs in `AS/` and to the markdown outputs in `analysis/`.
+
 ## Notes for future agents and developers
 
 - The strongest documented story in this archive is governance, transparency, and finance-process failure, not proven embezzlement.
@@ -66,6 +88,7 @@ These files are useful for local review but are not the primary public deliverab
 
 ## Current core outputs
 
+- 1 public static website
 - 1 comprehensive report
 - 23 meeting or email-vote article drafts
 - source extraction scripts for reproducible review

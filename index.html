@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AS Watch UCSB</title>
+    <meta
+      name="description"
+      content="A source-backed public tracker for Associated Students UCSB Senate meetings, spending fights, appointments, honoraria debates, and governance red flags."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top">
+          <span class="brand-mark">AS</span>
+          <span class="brand-copy">
+            <strong>AS Watch UCSB</strong>
+            <small>Documenting Associated Students power, spending, and process</small>
+          </span>
+        </a>
+        <nav class="top-nav">
+          <a href="#standards">Standards</a>
+          <a href="#power-map">Power Map</a>
+          <a href="#red-flags">Signals</a>
+          <a href="#tracker">Meeting Tracker</a>
+          <a href="#resources">Resources</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">A public accountability archive for students</p>
+            <p class="hero-kicker">76th Senate / May 2025 to January 2026</p>
+            <h1>Inside UCSB student government.</h1>
+            <p class="hero-subtitle">Who held power. Where the money went. Which process failures kept repeating.</p>
+            <p class="hero-lead">
+              This site ties together Associated Students UCSB Senate agendas, minutes, appointments,
+              funding fights, honoraria debates, closed-session disputes, and official role changes
+              across the 76th Senate. It is built from the documents in this repo, not rumor.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#tracker">Explore the timeline</a>
+              <a class="button button-secondary" href="analysis/associated_students_senate_report.md">Read the full report</a>
+            </div>
+            <div class="hero-strip">
+              <article class="hero-strip-card">
+                <strong>Money</strong>
+                <span>Honoraria, unallocated transfers, committee spending, office expansion requests.</span>
+              </article>
+              <article class="hero-strip-card">
+                <strong>Power</strong>
+                <span>Appointments, chair reshuffles, legal opinions, executive search, agenda control.</span>
+              </article>
+              <article class="hero-strip-card">
+                <strong>Proof standard</strong>
+                <span>Hard on process failure, careful on criminal claims the PDFs do not prove.</span>
+              </article>
+            </div>
+          </div>
+          <aside class="hero-panel">
+            <div class="panel-kicker">Investigative frame</div>
+            <h2 class="hero-panel-title">What the archive actually shows</h2>
+            <div class="hero-panel-stack">
+              <article class="hero-note">
+                <span class="hero-note-label">Documented</span>
+                <p>Recurring fights over money, appointments, legal code, honoraria, and closed-session procedure.</p>
+              </article>
+              <article class="hero-note">
+                <span class="hero-note-label">Admitted in the record</span>
+                <p>Weak budget visibility, backlog, incomplete fiscal-close data, and approval workflows senators themselves did not trust.</p>
+              </article>
+              <article class="hero-note">
+                <span class="hero-note-label">Not proven here</span>
+                <p>No direct documentary proof of embezzlement in these PDFs alone. Strong scrutiny is warranted; sloppy claims are not.</p>
+              </article>
+            </div>
+            <div class="hero-panel-footer">Built from meeting records, not gossip.</div>
+          </aside>
+        </section>
+
+        <section class="stats-section reveal">
+          <div id="stats-grid" class="stats-grid"></div>
+        </section>
+
+        <section id="standards" class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Method</p>
+            <h2>Sharp about accountability. Careful about proof.</h2>
+          </div>
+          <div class="standards-grid">
+            <article class="paper-card">
+              <h3>What this project does</h3>
+              <p>
+                It organizes the Senate record into a public-facing map of meetings, votes, role
+                changes, funding decisions, and governance failures so students can follow patterns
+                instead of isolated moments.
+              </p>
+            </article>
+            <article class="paper-card">
+              <h3>What this project does not do</h3>
+              <p>
+                It does not label people corrupt without evidence. The archive shows serious process
+                failures, opaque finance, and internal power struggles. Those are documented facts.
+                Criminal conclusions require evidence outside these PDFs.
+              </p>
+            </article>
+            <article class="paper-card">
+              <h3>Why this matters</h3>
+              <p>
+                Student fees, honoraria, committee appointments, and public accountability all run
+                through these systems. When the systems are weak, students lose visibility into how
+                power is exercised on their behalf.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="power-map" class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Power Map</p>
+            <h2>How official power moved through the Senate.</h2>
+          </div>
+          <div id="power-grid" class="power-grid"></div>
+          <div class="relationship-band">
+            <p class="band-label">Documented pressure points</p>
+            <div id="relationship-list" class="relationship-list"></div>
+          </div>
+        </section>
+
+        <section id="red-flags" class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Signals</p>
+            <h2>The recurring patterns students should not ignore.</h2>
+          </div>
+          <div id="flag-grid" class="flag-grid"></div>
+        </section>
+
+        <section class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Story Arc</p>
+            <h2>From procedural cleanup to a full transparency crisis.</h2>
+          </div>
+          <div id="arc-grid" class="arc-grid"></div>
+        </section>
+
+        <section id="tracker" class="section reveal">
+          <div class="section-heading section-heading-wide">
+            <div>
+              <p class="eyebrow">Meeting Tracker</p>
+              <h2>Every meeting, email vote, and major flashpoint.</h2>
+            </div>
+            <div class="tracker-controls">
+              <div id="filter-bar" class="filter-bar"></div>
+              <label class="search-wrap">
+                <span>Search</span>
+                <input id="meeting-search" type="search" placeholder="Search people, topics, motions, dates" />
+              </label>
+            </div>
+          </div>
+          <div id="meeting-results" class="result-count"></div>
+          <div id="meeting-grid" class="meeting-grid"></div>
+        </section>
+
+        <section class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">What Students Can Do</p>
+            <h2>Turn attention into pressure.</h2>
+          </div>
+          <div id="action-grid" class="action-grid"></div>
+        </section>
+
+        <section id="resources" class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Resources</p>
+            <h2>Read the source material and continue the work.</h2>
+          </div>
+          <div class="resource-grid">
+            <a class="resource-card" href="analysis/associated_students_senate_report.md">
+              <strong>Comprehensive report</strong>
+              <span>Long-form review of themes, money fights, and documented risks.</span>
+            </a>
+            <a class="resource-card" href="analysis/senate_watch_article_drafts.md">
+              <strong>Article draft archive</strong>
+              <span>Meeting-by-meeting reporting drafts that can be adapted for publication.</span>
+            </a>
+            <a class="resource-card" href="#tracker">
+              <strong>Source PDFs in tracker</strong>
+              <span>Every meeting card includes direct links to the underlying agenda or minutes PDFs when available.</span>
+            </a>
+            <a class="resource-card" href="README.md">
+              <strong>Repo guide</strong>
+              <span>What is public-facing, what is generated, and how future contributors should work.</span>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>
+          AS Watch UCSB is a document-backed public accountability project. It is strongest where the
+          record is strongest: official roles, motions, money requests, closed-session usage, and
+          process failures visible in the archive.
+        </p>
+      </footer>
+    </div>
+
+    <script src="assets/site-data.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
